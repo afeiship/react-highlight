@@ -21,7 +21,15 @@ class App extends React.Component {
           <dt>Highlight Javascript</dt>
           <dd>
             <ReactHighlight lang="js">
-              {require('raw-loader!./index.js').default}
+              {require('raw-loader!./assets/demo.js').default}
+            </ReactHighlight>
+          </dd>
+        </dl>
+        <dl className="item">
+          <dt>Highlight CSS</dt>
+          <dd>
+            <ReactHighlight lang="css">
+              {require('!!raw-loader!./assets/demo.css').default}
             </ReactHighlight>
           </dd>
         </dl>
