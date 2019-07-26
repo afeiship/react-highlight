@@ -60,6 +60,7 @@ npm install -S afeiship/react-highlight
   ```
 
 ## documentation
+- https://highlightjs.org/
 - https://afeiship.github.io/react-highlight/
 
 ## resouces
