@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://afeiship.github.io/react-highlight/">
+    <img width="800" src="https://tva1.sinaimg.cn/large/006y8mN6gy1g796rcu6wlj30rs07ymy7.jpg">
+  </a>
+</p>
+
 # react-highlight
 > A simple React wrapper around the Highlight.js library.
 
