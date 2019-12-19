@@ -9,7 +9,7 @@
 
 ## install
 ```shell
-npm install -S afeiship/react-highlight
+npm install -S @feizheng/react-highlight
 ```
 
 ## usage

@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from 'noop';
+import noop from '@feizheng/noop';
 import highlight from 'highlight.js';
 import objectAssign from 'object-assign';
 
 const CLASS_NAME = 'react-highlight';
 
 export default class extends Component {
-  /*===properties start===*/
   static propTypes = {
     className: PropTypes.string,
     lang: PropTypes.string
@@ -18,7 +17,6 @@ export default class extends Component {
   static defaultProps = {
     lang: 'javascript'
   };
-  /*===properties end===*/
 
   constructor(inProps) {
     super(inProps);

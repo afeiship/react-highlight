@@ -10,14 +10,21 @@ body,
 }
 
 @import "@/components/style.scss";
-
 .app-container {
   width: 80%;
-  margin: 0 auto;
-  padding:50px 0;
-  .item{
+  height: 80%;
+  margin: 6% auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #bebebe;
+  border-radius: 6px;
+  .item {
+    width:100%;
+    margin: 10px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    dt{
+    dt {
       font-size: 18px;
       padding-left: 14px;
       border-left: 4px solid #333;
@@ -25,7 +32,7 @@ body,
       line-height: 30px;
       margin-bottom: 1px;
     }
-    dd{
+    dd {
     }
   }
 }
