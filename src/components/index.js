@@ -11,7 +11,8 @@ const CLASS_NAME = 'react-highlight';
 export default class extends Component {
   static propTypes = {
     className: PropTypes.string,
-    lang: PropTypes.string
+    lang: PropTypes.string,
+    extra: PropTypes.element
   };
 
   static defaultProps = {
@@ -33,10 +34,11 @@ export default class extends Component {
   }
 
   render() {
-    const { children, className, lang, ...props } = this.props;
+    const { children, className, lang, extra, ...props } = this.props;
 
     return (
       <pre className={classNames(CLASS_NAME, className)} {...props}>
+        {extra}
         <code className={lang} ref={this.code}>
           {children}
         </code>
