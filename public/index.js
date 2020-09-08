@@ -1,21 +1,33 @@
-import ReactHighlight from '../src/main';
-import ReactDOM from 'react-dom';
-import React from 'react';
-import './assets/style.scss';
-import 'highlight.js/styles/atom-one-dark.css';
-
+import NxOfflineSw from '@feizheng/next-offline-sw';
+import ReactGithubCorner from '@feizheng/react-github-corner';
 import {
-  Window,
-  WindowContent,
-  ToolbarHeader,
-  ToolbarFooter
+  ToolbarFooter, ToolbarHeader, Window,
+  WindowContent
 } from '@feizheng/react-photon';
+import ReactSwUpdateTips from '@feizheng/react-sw-update-tips';
+import 'highlight.js/styles/atom-one-dark.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ReactHighlight from '../src/main';
+import './assets/style.scss';
+
 
 class App extends React.Component {
+  state = { hasUpdate: false };
+
+  componentDidMount() {
+    NxOfflineSw.install({
+      onUpdateReady: () => {
+        this.setState({ hasUpdate: true });
+      }
+    });
+  }
+
   render() {
     return (
-      <div className="app-container">
-        <Window>
+      <div className="p-3 app-container">
+        {/* Core components usage start */}
+        <Window relative>
           <ToolbarHeader title="header" />
           <WindowContent>
             <dl className="item">
@@ -35,28 +47,11 @@ class App extends React.Component {
               </dd>
             </dl>
           </WindowContent>
-          {/* <WindowContent>
-            <dl className="item">
-              <dt>Highlight Javascript</dt>
-              <dd>
-                <ReactHighlight lang="js">
-                  {require('raw-loader!./assets/demo.js').default}
-                </ReactHighlight>
-              </dd>
-            </dl>
-          </WindowContent>
-          <WindowContent>
-            <dl className="item">
-              <dt>Highlight CSS</dt>
-              <dd>
-                <ReactHighlight lang="css">
-                  {require('!!raw-loader!./assets/demo.css').default}
-                </ReactHighlight>
-              </dd>
-            </dl>
-          </WindowContent> */}
           <ToolbarFooter title="footer" />
         </Window>
+        {/* Core components usage end */}
+        <ReactSwUpdateTips value={this.state.hasUpdate} />
+        <ReactGithubCorner value="https://github.com/afeiship/react-highlight" />
       </div>
     );
   }
