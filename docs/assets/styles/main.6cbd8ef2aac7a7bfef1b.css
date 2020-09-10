@@ -1,0 +1,99 @@
+/*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #282c34;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75;
+}
+
+.hljs-literal {
+  color: #56b6c2;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #98c379;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+.react-highlight{border-radius:4px;box-shadow:0 1px 1px rgba(0,0,0,0.3);padding:0.5em;white-space:pre-wrap}.react-github-corner:hover .octo-arm{-webkit-animation:octocat-wave 560ms ease-in-out;animation:octocat-wave 560ms ease-in-out}.react-github-corner:hover svg{fill:#fd5353}@-webkit-keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}.react-github-corner svg{fill:#fd6c6c;color:#fff;position:absolute;top:0;border:0;right:0;transition:0.2s all}.react-sw-update-tips{background:#007aff;position:fixed;box-sizing:border-box;font-size:12px;top:0;left:0;right:0;padding:0 10px;z-index:1000;height:32px;line-height:32px;display:flex;align-items:center;justify-content:space-between}.react-sw-update-tips[hidden]{display:none}.react-sw-update-tips,.react-sw-update-tips a{color:#fff}.react-sw-update-tips a{cursor:pointer}.react-sw-update-tips a:active{opacity:0.8}.app-container{width:80%;height:80%;margin:100px auto;max-width:750px}.app-container .item{width:100%;margin:10px;border-radius:10px}.app-container .item .react-highlight{margin:10px 0 0;background:#282d33}.app-container .item dt{font-size:18px;padding-left:14px;border-left:4px solid #333;background:#eee;line-height:30px;margin-bottom:1px}
+
