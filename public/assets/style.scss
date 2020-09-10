@@ -2,21 +2,18 @@
 @import "~@feizheng/react-github-corner/dist/style.scss";
 @import "~@feizheng/react-sw-update-tips/dist/style.scss";
 
-
 .app-container {
   width: 80%;
   height: 80%;
-  margin: 3% auto;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid #bebebe;
-  border-radius: 6px;
+  margin: 100px auto;
   .item {
-    width:100%;
+    width: 100%;
     margin: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    .react-highlight {
+      margin: 10px 0 0;
+      background: #282d33;
+    }
     dt {
       font-size: 18px;
       padding-left: 14px;
@@ -24,8 +21,6 @@
       background: #eee;
       line-height: 30px;
       margin-bottom: 1px;
-    }
-    dd {
     }
   }
 }

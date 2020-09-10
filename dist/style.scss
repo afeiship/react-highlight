@@ -1,5 +1,8 @@
 $react-highlight-options: () !default;
 
 .react-highlight {
-  // your styles
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  padding: 0.5em;
+  white-space: pre-wrap;
 }

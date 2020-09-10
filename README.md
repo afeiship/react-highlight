@@ -64,26 +64,17 @@ npm update @feizheng/react-highlight
         <div className="p-3 app-container">
           {/* Core components usage start */}
           <Window relative>
-            <ToolbarHeader title="header" />
+            <ToolbarHeader title="Highlight ruby" />
             <WindowContent>
               <dl className="item">
-                <dt>Highlight HTML</dt>
                 <dd>
-                  <ReactHighlight lang="html">
-                    {require('raw-loader!./index.ejs').default}
-                  </ReactHighlight>
-                </dd>
-              </dl>
-              <dl className="item">
-                <dt>Highlight Javascript</dt>
-                <dd>
-                  <ReactHighlight lang="js">
-                    {require('raw-loader!./assets/demo.js').default}
+                  <ReactHighlight lang="ruby">
+                    {require('raw-loader!./assets/demo.rb').default}
                   </ReactHighlight>
                 </dd>
               </dl>
             </WindowContent>
-            <ToolbarFooter title="footer" />
+            <ToolbarFooter title="theme: atom-one-dark" />
           </Window>
           {/* Core components usage end */}
           <ReactSwUpdateTips value={this.state.hasUpdate} />
@@ -99,6 +90,7 @@ npm update @feizheng/react-highlight
 
 ## documentation
 - https://afeiship.github.io/react-highlight/
+- https://highlightjs.org/
 
 
 ## license

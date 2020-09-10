@@ -34,6 +34,7 @@ __GENERATE_DAPP__
 
 ## documentation
 - https://afeiship.github.io/react-highlight/
+- https://highlightjs.org/
 
 
 ## license
