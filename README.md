@@ -8,102 +8,39 @@
 
 ## installation
 ```shell
-npm install -S @feizheng/react-highlight
-```
-
-## update
-```shell
-npm update @feizheng/react-highlight
+npm install -S @jswork/react-highlight
 ```
 
 ## properties
-| Name      | Type    | Required | Default      | Description                           |
-| --------- | ------- | -------- | ------------ | ------------------------------------- |
-| className | string  | false    | -            | The extended className for component. |
-| lang      | string  | false    | 'javascript' | The display language.                 |
-| extra     | element | false    | -            | The extra element.                    |
-
+__GENERATE_DOCS__
 
 ## usage
 1. import css
   ```scss
-  @import "~@feizheng/react-highlight/dist/style.scss";
+  @import "~@jswork/boilerplate-react-component/dist/style.css";
+
+  // or use sass
+  @import "~@jswork/boilerplate-react-component/dist/style.scss";
 
   // customize your styles:
-  $react-highlight-options: ()
+  $boilerplate-react-component-options: ()
   ```
 2. import js
   ```js
-  import NxOfflineSw from '@feizheng/next-offline-sw';
-  import ReactGithubCorner from '@feizheng/react-github-corner';
-  import {
-    ToolbarFooter, ToolbarHeader, Window,
-    WindowContent
-  } from '@feizheng/react-photon';
-  import ReactSwUpdateTips from '@feizheng/react-sw-update-tips';
-  import 'highlight.js/styles/atom-one-dark.css';
-  import React from 'react';
-  import ReactDOM from 'react-dom';
-  import ReactHighlight from '@feizheng/react-highlight';
-  import './assets/style.scss';
-
-
-  class App extends React.Component {
-    state = { hasUpdate: false };
-
-    componentDidMount() {
-      NxOfflineSw.install({
-        onUpdateReady: () => {
-          this.setState({ hasUpdate: true });
-        }
-      });
-    }
-
-    render() {
-      return (
-        <div className="p-3 app-container">
-          {/* Core components usage start */}
-          <Window relative>
-            <ToolbarHeader title="Highlight ruby" />
-            <WindowContent>
-              <dl className="item">
-                <dd>
-                  <ReactHighlight lang="ruby">
-                    {require('raw-loader!./assets/demo.rb').default}
-                  </ReactHighlight>
-                </dd>
-              </dl>
-            </WindowContent>
-            <ToolbarFooter title="theme: atom-one-dark" />
-          </Window>
-          {/* Core components usage end */}
-          <ReactSwUpdateTips value={this.state.hasUpdate} />
-          <ReactGithubCorner value="https://github.com/afeiship/react-highlight" />
-        </div>
-      );
-    }
-  }
-
-  ReactDOM.render(<App />, document.getElementById('app'));
-
+__GENERATE_DAPP__
   ```
-
-## documentation
-- https://afeiship.github.io/react-highlight/
-- https://highlightjs.org/
-
 
 ## license
 Code released under [the MIT license](https://github.com/afeiship/react-highlight/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/react-highlight
-[version-url]: https://npmjs.org/package/@feizheng/react-highlight
+[version-image]: https://img.shields.io/npm/v/@jswork/react-highlight
+[version-url]: https://npmjs.org/package/@jswork/react-highlight
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/react-highlight
+[license-image]: https://img.shields.io/npm/l/@jswork/react-highlight
 [license-url]: https://github.com/afeiship/react-highlight/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/react-highlight
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/react-highlight
 [size-url]: https://github.com/afeiship/react-highlight/blob/master/dist/react-highlight.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/react-highlight
-[download-url]: https://www.npmjs.com/package/@feizheng/react-highlight
+[download-image]: https://img.shields.io/npm/dm/@jswork/react-highlight
+[download-url]: https://www.npmjs.com/package/@jswork/react-highlight
