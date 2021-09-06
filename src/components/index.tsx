@@ -19,12 +19,12 @@ export default class ReactHighlight extends Component<ReactHighlightProps> {
   private code;
 
   componentDidMount() {
-    highlight.highlightBlock(this.code);
+    highlight.highlightElement(this.code);
   }
 
   componentDidUpdate() {
     // highlight.initHighlighting.called = false;
-    highlight.highlightBlock(this.code);
+    highlight.highlightElement(this.code);
   }
 
   render() {
